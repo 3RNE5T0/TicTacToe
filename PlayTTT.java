@@ -29,5 +29,64 @@ public class PlayTTT{
     
     board.makeMove(player1.getSymbol(), row, col);
     board.drawBoard();
+    
+    
+    System.out.println("Player " + player2.getName() + ", give row and then column: ");
+    row = in.nextInt();
+    col = in.nextInt();
+    
+    board.makeMove(player2.getSymbol(), row, col);
+    board.drawBoard();
+    
+    
+    System.out.println("Player " + player1.getName() + ", give row and then column: ");
+    row = in.nextInt();
+    col = in.nextInt();
+    
+    board.makeMove(player1.getSymbol(), row, col);
+    board.drawBoard();
+    
+    
+    System.out.println("Player " + player2.getName() + ", give row and then column: ");
+    row = in.nextInt();
+    col = in.nextInt();
+    
+    board.makeMove(player2.getSymbol(), row, col);
+    board.drawBoard();
+    
+    System.out.println("Player " + player1.getName() + ", give row and then column: ");
+    row = in.nextInt();
+    col = in.nextInt();
+    
+    board.makeMove(player1.getSymbol(), row, col);
+    board.drawBoard();
+    
+    System.out.println("Player " + player2.getName() + ", give row and then column: ");
+    row = in.nextInt();
+    col = in.nextInt();
+    
+    board.makeMove(player2.getSymbol(), row, col);
+    board.drawBoard();
+    
+    System.out.println("Player " + player1.getName() + ", give row and then column: ");
+    row = in.nextInt();
+    col = in.nextInt();
+    
+    board.makeMove(player1.getSymbol(), row, col);
+    board.drawBoard();
+    
+    System.out.println("Player " + player2.getName() + ", give row and then column: ");
+    row = in.nextInt();
+    col = in.nextInt();
+    
+    board.makeMove(player2.getSymbol(), row, col);
+    board.drawBoard();
+    
+    System.out.println("Player " + player1.getName() + ", give row and then column: ");
+    row = in.nextInt();
+    col = in.nextInt();
+    
+    board.makeMove(player1.getSymbol(), row, col);
+    board.drawBoard();
   }
 }
