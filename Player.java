@@ -19,14 +19,20 @@ public class Player{
     public char getSymbol(){
       return symbol;
     }
-  
-    public boolean getIsWinner(){
+  public void setSymbol(boolean newIsWinner){
+    isWinner = newIsWinner;
+    }
+  public boolean getIsWinner(){
       return isWinner;
     }
   
     public String getName(){
       return name;
     }
+  
+  public void setName(String newName){
+    name = newName;
+  }
   
    public String toString(){
     return symbol + " " + isWinner + " " + name;
