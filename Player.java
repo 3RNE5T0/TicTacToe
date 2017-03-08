@@ -4,18 +4,26 @@ public class Player{
   private char symbol;
   private boolean isWinner;
   private String name;
+  private boolean isTurn;
   
   public Player(){
     
   }
   
-  public Player(char newSymbol, boolean newIsWinner, String newName){
+  public Player(char newSymbol, boolean newIsWinner, String newName, boolean newIsTurn){
     
     symbol = newSymbol;
     isWinner = newIsWinner;
     name = newName;
+    isTurn = newIsTurn;
   }
-    
+  
+  public boolean getIsTurn(){
+    return isTurn;
+  }  
+  publix void setIsTurn(Boolean newIsTurn){
+    isTurn = newIsTurn;
+  }
     public char getSymbol(){
       return symbol;
     }
@@ -35,7 +43,7 @@ public class Player{
   }
   
    public String toString(){
-    return symbol + " " + isWinner + " " + name;
+    return symbol + " " + isWinner + " " + name + " " + isTurn;
    }
   
   }//end of class

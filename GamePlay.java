@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class GamePlay{
   
-  private Player player1 = new Player('x', false, "");
-  private Player player2 = new Player('o', false, "");
+  private Player player1 = new Player('x', false, "", true);
+  private Player player2 = new Player('o', false, "", false);
   
   public GamePlay(){
 	 
@@ -11,12 +11,27 @@ public class GamePlay{
 	public Player getPlayer1(){
 		return player1;
 	}
-	
 	public Player getPlayer2(){
 		return player2;
 	}
 	
+	public Player playerTurn(){
+		if(player1.getIsTurn()){
+			player1.setIsTurn(false);
+			player2.setIsTurn(true);
+			return player1;
+		}
+	else{
+		player2.setIsTurn(false);
+		player1.setIsTurn(true);
+		return player2;
+	}
+		
+	}
+	
   public void introsplash(){
+		
+		
 System.out.println ("                                 ");
 System.out.println ("                _______________  ");
 System.out.println ("                | How to play |  ");
