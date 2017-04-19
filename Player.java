@@ -21,7 +21,7 @@ public class Player{
   public boolean getIsTurn(){
     return isTurn;
   }  
-  publix void setIsTurn(Boolean newIsTurn){
+  public void setIsTurn(Boolean newIsTurn){
     isTurn = newIsTurn;
   }
     public char getSymbol(){
