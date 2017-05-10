@@ -1,20 +1,22 @@
 import java.util.Scanner;
 
 public class GamePlay{
-  
+  //code shows who is player 1 and who is player 2
   private Player player1 = new Player('x', false, "", true);
   private Player player2 = new Player('o', false, "", false);
   
   public GamePlay(){
 	 
 	}
+	//code shows player 1
 	public Player getPlayer1(){
 		return player1;
 	}
+	//code shows player 2
 	public Player getPlayer2(){
 		return player2;
 	}
-	
+	//code gives players turns starting with player 1, then player 2, etc.
 	public Player playerTurn(){
 		if(player1.getIsTurn()){
 			player1.setIsTurn(false);
@@ -31,7 +33,7 @@ public class GamePlay{
 	
   public void introsplash(){
 		
-		
+		//code showing the tirle to the game
 System.out.println ("                                 ");
 System.out.println ("                _______________  ");
 System.out.println ("                | How to play |  ");
@@ -40,7 +42,7 @@ System.out.println ("                 -------------   ");
 System.out.println ("                                 ");
 System.out.println (" 1. Give your names. (player 1 is X and 2 is O) ");
 System.out.println ("                        ");
-    
+    //scanner inputs the name you choose to play as
     Scanner in = new Scanner(System.in);
     
     System.out.println("Player 1 give a name: ");
@@ -56,7 +58,7 @@ System.out.println ("                        ");
     
 	 player2.setName(nameP2);
    // Player player2 = new Player('o', false, nameP2);
-
+//rules or instructions for the players to see and use in the game
 System.out.println ( "                                                                                                            ");
 System.out.println ( "    2. Player 1 goes first picking a place to put their x ");
 System.out.println ( "                                                                                                            ");
@@ -70,6 +72,7 @@ System.out.println ( "        - If someone enters something other than a # the g
 System.out.println ( "        - This is a work in progress game! ");
 System.out.println ( "                                                                                                            ");
 System.out.println ( "                                                                                                            ");
+		//code shows which number combinations is on which row + column
 System.out.println ( "                                                     ");
 System.out.println ( "                  0     1     2                      ");
 System.out.println ( "                  |     |     |                      ");

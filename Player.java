@@ -9,7 +9,7 @@ public class Player{
   public Player(){
     
   }
-  
+  //controls the turns
   public Player(char newSymbol, boolean newIsWinner, String newName, boolean newIsTurn){
     
     symbol = newSymbol;
@@ -17,7 +17,7 @@ public class Player{
     name = newName;
     isTurn = newIsTurn;
   }
-  
+  //getters and turns
   public boolean getIsTurn(){
     return isTurn;
   }  
@@ -27,13 +27,17 @@ public class Player{
     public char getSymbol(){
       return symbol;
     }
+  public void setSymbol(char newSymbol){
+    symbol = newSymbol;
+  }
+  //controls the winner
   public void setSymbol(boolean newIsWinner){
     isWinner = newIsWinner;
     }
   public boolean getIsWinner(){
       return isWinner;
     }
-  
+  //getters and setters
     public String getName(){
       return name;
     }
